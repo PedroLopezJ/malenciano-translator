@@ -12,6 +12,14 @@ In the same folder of the .py files, to run the translator, execute the followin
 python main.py
 ```
 
+Or run 
+
+```
+python main.py [phraseYouWantToTranslate]
+```
+
+In order to translate a sentence directly
+
 Then, enter the text to be translated and press enter.
 
 ## Run the tests
