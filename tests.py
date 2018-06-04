@@ -1,7 +1,7 @@
 import unittest
 import translators
-from word import Word
-from short_word import ShortWord
+from words.word import Word
+from words.short_word import ShortWord
 
 class TestTraduction(unittest.TestCase):
 

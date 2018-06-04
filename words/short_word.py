@@ -1,8 +1,11 @@
-import word
-from special_words import *
-from vocals import vocals, accentMarkedVocals
+import sys
+sys.path.append('../')
 
-class ShortWord(word.Word):
+from malencianoTranslator.words.word import *
+from malencianoTranslator.words.special_words import *
+from malencianoTranslator.sufixesAndVocals.vocals import vocals, accentMarkedVocals
+
+class ShortWord(Word):
     def replaceYforI(self):
       
         if len(self.word) == 2 and (self.word[1] == ',' or self.word[1] == '.'):

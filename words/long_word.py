@@ -1,8 +1,11 @@
-import word
-from vocals import vocals, accentMarkedVocals
-from sufixes import *
+import sys
+sys.path.append('../')
 
-class LongWord(word.Word):
+from malencianoTranslator.words.word import *
+from malencianoTranslator.sufixesAndVocals.vocals import vocals, accentMarkedVocals
+from malencianoTranslator.sufixesAndVocals.sufixes import *
+
+class LongWord(Word):
     
     def processLastCharacter(self):
         lastLetter = self.word[-1:]

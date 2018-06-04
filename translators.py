@@ -1,7 +1,7 @@
 import unidecode
-from word import Word
-from short_word import ShortWord
-from long_word import LongWord
+from words.word import Word
+from words.short_word import ShortWord
+from words.long_word import LongWord
     
 def removeAccents(phrase: str):
     return unidecode.unidecode(phrase)    
