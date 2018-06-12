@@ -1,4 +1,4 @@
-from setuptools import setup
+from distutils.core import setup
 
 setup(
    name='malenciano-translator',
@@ -6,5 +6,5 @@ setup(
    description='A module which allows you to translate into malenciano (joke about valencian language)',
    author='Pedro López',
    author_email='',
-   packages=['malenciano-translator'],  #same as name
+   packages=['malenciano-translator']
 )
