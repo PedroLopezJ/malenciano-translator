@@ -1,4 +1,4 @@
-from translators import *
+from translate import getPhraseTranslated
 import sys
 
 if (__name__ == "__main__" and len(sys.argv) == 1):
@@ -8,7 +8,6 @@ elif (sys.argv[1] != ""):
 else:
     print("Error reading input")    
 
-phraseTranslated = Translator(phraseToTranslate).translate()
+phraseTranslated = getPhraseTranslated(phraseToTranslate)
 
-#.split()
 print(phraseTranslated)

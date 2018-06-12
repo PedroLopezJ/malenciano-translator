@@ -1,5 +1,6 @@
 import unittest
 import translators
+from translate import getPhraseTranslated
 from words.word import Word
 from words.short_word import ShortWord
 
@@ -26,6 +27,9 @@ class TestTraduction(unittest.TestCase):
         self.assertEqual("i,", self.translator.processWord("y,"))           
         self.assertNotEqual("r,", self.translator.processWord("y,"))
         self.assertNotEqual("ir,", self.translator.processWord("y,"))   
+
+    def testGetPhraseTranslatedFromMain(self):
+        self.assertEqual(self.valencian1, getPhraseTranslated(self.castellan1))
 
     def testBocadilloPhrase(self):
         self.assertEqual(self.valencian1, self.translator.translate())
