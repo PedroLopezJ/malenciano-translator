@@ -1,10 +1,10 @@
 from distutils.core import setup
 
 setup(
-   name='malenciano-translator',
+   name='malenciano_translator',
    version='1.0',
    description='A module which allows you to translate into malenciano (joke about valencian language)',
    author='Pedro López',
    author_email='',
-   packages=['malenciano-translator']
+   packages=['malenciano_translator']
 )
