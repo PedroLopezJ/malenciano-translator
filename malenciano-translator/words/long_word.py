@@ -1,9 +1,9 @@
 import sys
-sys.path.append('../')
+sys.path.append('..')
 
-from malencianoTranslator.words.word import *
-from malencianoTranslator.sufixesAndVocals.vocals import vocals, accentMarkedVocals
-from malencianoTranslator.sufixesAndVocals.sufixes import *
+from words.word import *
+from sufixesAndVocals.vocals import vocals, accentMarkedVocals
+from sufixesAndVocals.sufixes import *
 
 class LongWord(Word):
     

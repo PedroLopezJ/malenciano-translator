@@ -1,9 +1,9 @@
 import sys
-sys.path.append('../')
+sys.path.append('..')
 
-from malencianoTranslator.words.word import *
-from malencianoTranslator.words.special_words import *
-from malencianoTranslator.sufixesAndVocals.vocals import vocals, accentMarkedVocals
+from words.word import *
+from words.special_words import *
+from sufixesAndVocals.vocals import vocals, accentMarkedVocals
 
 class ShortWord(Word):
     def replaceYforI(self):
