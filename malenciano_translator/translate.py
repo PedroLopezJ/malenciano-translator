@@ -1,4 +1,6 @@
-from translators import *
+import sys
+from translators import Translator
+sys.path.append('.')
 
 def getPhraseTranslated(phraseToTranslate):
     if (phraseToTranslate != ""):
