@@ -16,11 +16,11 @@ class TestTraduction(unittest.TestCase):
     
     def testLongWordIsTrue(self):
         testWord = Word("esternocleidomastoideo")
-        self.assertTrue(testWord.isValidToProcess())
+        self.assertTrue(testWord.isLong())
 
     def testShortWordIsFalse(self):
         testWord = Word("si")
-        self.assertFalse(testWord.isValidToProcess())  
+        self.assertFalse(testWord.isLong())  
 
     def testYreplacements(self):
         self.assertEqual("i", self.translator.processWord("y")) 

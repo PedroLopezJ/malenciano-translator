@@ -6,5 +6,5 @@ class Word:
     def getWord(self):
         return self.word
 
-    def isValidToProcess(self):
+    def isLong(self):
         return True if len(self.word) > 3 else False    

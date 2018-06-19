@@ -14,7 +14,7 @@ class Translator:
     def processWord(self, word: str):
         word = Word(word)
 
-        if word.isValidToProcess():
+        if word.isLong():
             word = LongWord(word.getWord())
             word.processLastCharacter()
             word.replaceLastDforT()
