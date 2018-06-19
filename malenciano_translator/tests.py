@@ -18,6 +18,10 @@ class TestTraduction(unittest.TestCase):
         testWord = Word("esternocleidomastoideo")
         self.assertTrue(testWord.isLong())
 
+    def testIsMention(self):
+        testWord = Word("@name")
+        self.assertTrue(testWord.isMention())
+
     def testShortWordIsFalse(self):
         testWord = Word("si")
         self.assertFalse(testWord.isLong())  
@@ -68,7 +72,13 @@ class TestTraduction(unittest.TestCase):
         castellan7 = "Me has matado con eso"
         valencian7 = "Me has matat amb es"    
         translator7 = translators.Translator(castellan7)
-        self.assertEqual(valencian7, translator7.translate())           
+        self.assertEqual(valencian7, translator7.translate())
+
+    def testNotTranslateMention(self):
+        castellan8 = "Oye @queso quiero un bocadillo de queso"
+        valencian8 = "Oy @queso quier un bocadill de ques"    
+        translator8 = translators.Translator(castellan8)
+        self.assertEqual(valencian8, translator8.translate())               
 
 if __name__ == "__main__":
     unittest.main()

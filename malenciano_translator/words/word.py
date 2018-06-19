@@ -8,3 +8,6 @@ class Word:
 
     def isLong(self):
         return True if len(self.word) > 3 else False    
+
+    def isMention(self):
+        return True if self.word[0] == "@" else False        
