@@ -1,4 +1,7 @@
-from translators import Translator
+import sys
+sys.path.append('..')
+from malenciano_translator.translators import Translator
+# from translators import Translator
 
 def getPhraseTranslated(phraseToTranslate):
     if (phraseToTranslate != ""):
