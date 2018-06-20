@@ -1,5 +1,5 @@
 import sys
-sys.path.append('..')
+sys.path.append('...')
 
 import unidecode
 from malenciano_translator.words.word import Word
