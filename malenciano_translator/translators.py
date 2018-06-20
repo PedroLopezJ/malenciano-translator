@@ -1,8 +1,10 @@
+import sys
+sys.path.append('..')
 
 import unidecode
-from words.word import Word
-from words.short_word import ShortWord
-from words.long_word import LongWord
+from malenciano_translator.words.word import Word
+from malenciano_translator.words.short_word import ShortWord
+from malenciano_translator.words.long_word import LongWord
     
 def removeAccents(phrase: str):
     return unidecode.unidecode(phrase)    
