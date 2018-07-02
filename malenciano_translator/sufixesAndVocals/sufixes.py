@@ -10,6 +10,7 @@ sufixes2letters["es"] = "s"
 sufixes2letters["is"] = "es"
 sufixes2letters["os"] = "s"
 sufixes2letters["us"] = "us"
+sufixes2letters["ar"] = ""
 
 sufixes2lettersKeys = list(sufixes2letters.keys())
 sufixes4lettersKeys = list(sufixes4letters.keys())

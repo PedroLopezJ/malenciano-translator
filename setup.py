@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 setup(
    name='malenciano_translator',
-   version='1.02',
+   version='1.2.1',
    description='A module which allows you to translate into malenciano (joke about valencian language)',
    author='Pedro López',
    author_email='',
