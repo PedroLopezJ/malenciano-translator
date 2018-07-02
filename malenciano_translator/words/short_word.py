@@ -1,9 +1,6 @@
-import sys
-sys.path.append('..')
-
-from words.word import *
-from words.special_words import *
-from sufixesAndVocals.vocals import vocals, accentMarkedVocals
+from .word import *
+from .special_words import *
+from ..sufixesAndVocals.vocals import vocals, accentMarkedVocals
 
 class ShortWord(Word):
     def replaceYforI(self):

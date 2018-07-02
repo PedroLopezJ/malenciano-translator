@@ -1,9 +1,6 @@
-import sys
-sys.path.append('..')
-
-from words.word import *
-from sufixesAndVocals.vocals import vocals, accentMarkedVocals
-from sufixesAndVocals.sufixes import *
+from .word import Word
+from ..sufixesAndVocals.vocals import vocals, accentMarkedVocals
+from ..sufixesAndVocals.sufixes import *
 
 class LongWord(Word):
     
