@@ -1,7 +1,7 @@
 class Word:
 
     def __init__(self, word: str):
-        self.word = self.word.replace('ñ', 'ny')
+        self.word = word.replace('ñ', 'ny')
 
     def getWord(self):
         return self.word
